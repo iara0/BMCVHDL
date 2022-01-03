@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Trilha VHDL</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="assets/css/styles.min.css"></head>
+        <body>
+            <nav class="navbar navbar-light navbar-expand-md sticky-top d-flex navigation-clean-button" style="height: 80px;color: #ffffff;background: #0D4A22;max-height: 60px;">
+                <div class="container-fluid">
+        
+                     <a class="navbar-brand" style="color:#ffffff;">&nbsp;BMCVHDL</a>
+        
+                    <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse justify-content-end collapse" id="navcol-2" style="color:#ffffff;">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="color:#ffffff;">&nbsp;Início</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Trilha-sumário.html" style="color:#ffffff;">Trilha de Aprendizado</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="BMCVHDL.html" style="color:#ffffff;">&nbsp;BMCVHDL</a>
+                            </li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Sobre.html" style="color:#ffffff;">Sobre</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <p>&nbsp;&nbsp;</p>
+
+            <div class="container" style="margin-left: 15%;margin-right: 15%;width: 70%;">
+                <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center" style="height: 44.8px;">
+                    <p class="justify-content-lg-center align-items-lg-center" style="font-size: 35px;color: #0d4a22;">Trilha de Aprendizado</p>
+                </div>
+                <p>&nbsp;&nbsp;</p>
+                <div class="container" style="background: rgba(13,74,34,0.28);">
+                    <br>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 25px;"><strong>Linguagem de descrição de hardware - VHDL</strong></p>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center" >
+                        <img src="assets\img\USING-FPGAS-FOR-ARTIFICIAL-INTELLIGENCE-i2tutorials.jpg" width="50%" height="40%">
+                    </div>
+
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center">
+                        <p>
+                            Fonte:
+                        <a href="https://d1zx6djv3kb1v7.cloudfront.net/wp-content/media/2019/12/USING-FPGAS-FOR-ARTIFICIAL-INTELLIGENCE-i2tutorials-1024x768.jpg">i2 tutorials</a>
+                        </p>
+                    </div>
+                    
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">A linguagem, pela maioria das medidas, é a base de qualquer civilização ou sociedade. O campo da eletrônica, que de certa forma é sua própria sociedade, também utiliza linguagens específicas de seus membros. Duas dessas linguagens específicas de campo (descrição de hardware) são VHDL e Verilog. Ambos são considerados linguagens de design digital de uso geral, cada um com diferenças sutis e vantagens sobre o outro.</p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">
+                        <strong>O que são linguagens de descrição de hardware (HDLs)?</strong>
+                    </p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">HDLs são de fato semelhantes às linguagens de programação, mas não exatamente iguais. Utilizamos uma linguagem de programação para construir ou criar software, enquanto usamos uma linguagem de descrição de hardware para descrever ou expressar as características comportamentais dos circuitos lógicos digitais.</p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Utilizamos HDLs para projetar processadores, placas-mãe, CPUs (ou seja, chips de computador), bem como vários outros circuitos digitais.</p>
+
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">
+                        <strong>O que é VHDL?</strong>
+                    </p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">A linguagem de descrição de hardware de circuito integrado de muito alta velocidade (VHDL) é uma linguagem de descrição usada para descrever o hardware. É utilizado em automação de projeto eletrônico para expressar sinais mistos e sistemas digitais, como ICs (circuitos integrados) e FPGA (matrizes de portas programáveis ​​em campo) . Também podemos usar VHDL como uma linguagem de programação paralela de propósito geral.</p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Utilizamos VHDL para escrever modelos de texto que descrevem ou expressam circuitos lógicos. Se o modelo de texto fizer parte do projeto lógico, o modelo é processado por um programa de síntese. A próxima etapa do processo incorpora um programa de simulação para testar o projeto lógico. Durante esta etapa, utilizamos os modelos de simulação para caracterizar os circuitos lógicos que fazem interface com o projeto. Referimo-nos a esta coleção de modelos de simulação como um testbench.</p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Normalmente, um simulador VHDL é um simulador orientado a eventos, o que significa que adicionamos cada transação a uma fila de eventos para um determinado horário agendado. Por exemplo, se uma atribuição de sinal ocorre após um nanossegundo, adicionamos o evento à fila como tempo + 1ns. Embora um atraso zero seja permitido, ele ainda deve ser programado e, para esses cenários, utilizamos um atraso Delta.</p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">
+                        <strong>As vantagens do VHDL</strong>
+                    </p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">A vantagem crítica do VHDL, no que diz respeito à utilização do projeto do sistema, é que ele permite que o comportamento do sistema essencial seja verificado e modelado antes da tradução das ferramentas de síntese do projeto em portas e fios reais (hardware). Os projetos VHDL também são portáteis, o que significa que você pode gerar um projeto para uma base de elemento e, em seguida, portá-lo em outra base de elemento, como VLSI, com uma variedade de tecnologias.</p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">O uso de VHDL oferece ao usuário descrições de sistema simultâneas. VHDL é uma linguagem de fluxo de dados, o que significa que pode considerar simultaneamente todas as instruções para execução. Isso está em contraste direto com as linguagens de computação procedural como C, código assembly e BASIC. Cada uma dessas linguagens executa uma sequência de instruções, tanto sequencialmente quanto uma única instrução por vez.</p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Um dos benefícios mais vantajosos do VHDL é que seus projetos são polivalentes; você cria o projeto uma vez e pode utilizar o bloco de cálculo em vários outros projetos. Isso significa que você pode fazer alterações, como parâmetros, base do elemento, tamanho da memória, composição do bloco, estrutura de interconexão e capacidade.</p>
+
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">
+                        <strong>Aplicações e Uso</strong>
+                    </p>
+
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Uma das aplicações mais comuns e simples da linguagem é no estudo de circuitos lógicos e álgebra booleana. Muitos livros da área utilizam exemplos em VHDL e muitas universidades utilizam a linguagem como ferramenta no estudo inicial de sistemas digitais. Por exemplo, considerando a porta lógica AND abaixo, é possível identificar duas entradas, A e B, e uma saída, C. O comportamento esperado da porta lógica é apresentado na tabela verdade.</p>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center" >
+                        <img src="assets\img\porta and.png" width="50%" height="40%"> 
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center">
+                        <p>
+                            Fonte:
+                        <a href="https://i.stack.imgur.com/oFmlp.png">Stack Overflow</a>
+                        </p>
+                    </div>
+                    
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Com VHDL é possível reproduzir o comportamento desta porta lógica para fins educacionais. Com a palavra reservada entity é possível criar uma caixa preta, definindo as entradas e saídas do nosso projeto. Neste caso, as entradas A e B e a saída C; todas representam sinais digitais e portanto podem ser representado por um bit. Diz-se caixa preta pois apenas é definido as entradas e saídas do circuito, sem definir seu comportamento. Veja a implementação abaixo:</p>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center" >
+                        <img src="assets\img\entity e.png" width="40%" height="30%"> 
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center">
+                        <p>
+                            Fonte:
+                        <a href="https://pt.stackoverflow.com/questions/216032/vhdl-%C3%A9-linguagem-de-programa%C3%A7%C3%A3o">Stack Overflow</a>
+                        </p>
+                    </div>
+                   
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Isto é, criamos uma entidade chamada porta_e que possui três portas: o sinal A, entrada do tipo bit, o sinal B, entrada do tipo bit, e o sinal C, saída do tipo bit. Perceba que não foi definido como serão tratados esses sinais nem qual é o comportamento da nossa entidade. Com entity é apenas definido a interface do componente com o mundo externo. O comportamento do circuito é definido utilizando a palavra reservada architecture:</p>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center" >
+                        <img src="assets\img\architecture e.png" width="40%" height="40%"> 
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center">
+                        <p>
+                            Fonte:
+                        <a href="https://pt.stackoverflow.com/questions/216032/vhdl-%C3%A9-linguagem-de-programa%C3%A7%C3%A3o">Stack Overflow</a>
+                        </p>
+                    </div>
+                    
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Neste caso, criamos uma arquitetura chamada rtl, vinculada à entidade porta_e, que define o comportamento desejado para nosso circuito, ou seja, o sinal C recebe o resultado da operação and entre A e B. O operador and para operandos do tipo bit já possui implementação nativa no VHDL e é interpretado corretamente por qualquer sintetizador. O código completo da porta AND entãp ficaria:</p>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center" >
+                        <img src="assets\img\codigo e.png" width="40%" height="30%"> 
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center">
+                        <p>
+                            Fonte:
+                        <a href="https://pt.stackoverflow.com/questions/216032/vhdl-%C3%A9-linguagem-de-programa%C3%A7%C3%A3o">Stack Overflow</a>
+                        </p>
+                    </div>
+                    
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">A título de exemplo, sintetizando o código acima com o Quartus Prime Lite Edition, da Altera (uma das maiores empresas no ramo de FPGAs), gera o seguinte circuito:</p>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center" >
+                        <img src="assets\img\circuito e.png" width="50%" height="40%"> 
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-lg-center align-items-lg-center">
+                        <p>
+                            Fonte:
+                        <a href="https://pt.stackoverflow.com/questions/216032/vhdl-%C3%A9-linguagem-de-programa%C3%A7%C3%A3o">Stack Overflow</a>
+                        </p>
+                    </div>
+                    
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;">Exatamente o circuito que esperávamos obter, mas essa é uma das aplicações mais básicas da linguagem. Sua aplicação em si não tem como ser descrita, varia de acordo com a necessidade e criatividade de cada um, pois qualquer circuito digital pode ser implementado utilizando VHDL. Pode ir de uma simples porta lógica, como mostrado, até um modem para transmissões em altas velocidades através de fibra ótica ou mais complexo que isso. A título de exemplo, é possível recriar microcontroladores, permitindo até que você o programe utilizando outras linguagens, como C ou Assembly. É possível criar drivers de vídeo do zero, drivers de áudio, memórias, etc. Basicamente qualquer circuito digital. </p>
+                    
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 20px;"><strong>Referências e links relacionados:</strong></p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 17px;">
+                        <strong>VHDL.</strong>
+                        Wikipedia.
+                        <a href="https://pt.wikipedia.org/wiki/VHDL">Leia mais</a>
+                        <br>
+                    </p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 17px;">
+                        <strong>Linguagens de descrição de hardware: VHDL vs Verilog e seus usos funcionais.</strong>
+                        Cadence Design Systems.
+                        <a href="https://resources.pcb.cadence.com/blog/2020-hardware-description-languages-vhdl-vs-verilog-and-their-functional-uses">Leia mais</a>
+                        <br>
+                    </p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 17px;">
+                        <strong>Linguagem VHDL: aplicações e usos.</strong>
+                        Stack Overflow.
+                        <a href="https://pt.stackoverflow.com/questions/216032/vhdl-%C3%A9-linguagem-de-programa%C3%A7%C3%A3o">Leia mais</a>
+                        <br>
+                    </p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 17px;">
+                        <strong>VHDL.</strong>
+                        Carlos Delfino.
+                        <a href="http://carlosdelfino.eti.br/embarcados/vhdl/vhdl/">Leia mais</a>
+                        <br>
+                    </p>
+                    <p style="text-align: justify;text-shadow: 0px 0px;font-size: 17px;">
+                        <strong>Introdução ao VHDL.</strong>
+                        Academia.
+                        <a href="https://www.academia.edu/6445556/Introdu%C3%A7%C3%A3o_ao_VHDL_O_que_%C3%A9_VHDL">Leia mais</a>
+                        <br>
+                    </p>
+                    <br>
+                    <p style="text-align: justify;text-shadow: 0px 0px;">&nbsp;&nbsp;</p>
+
+                </div>
+            </div>
+
+                <p>&nbsp;&nbsp;</p>
+                <footer class="d-flex float-sm-none justify-content-xxl-center align-items-xxl-end footer-dark" style="height: 250px;background: var(--bs-white);">
+                    <div class="container">
+                        <div class="row branco">
+                            <div class="col-xl-4 offset-xl-1 text-center">
+                                <br>
+                                <img src="assets\img\logo-ufam.png" height="120">&nbsp;&nbsp;&nbsp;&nbsp;
+                                <img class="super" src="assets\img\logo-super.png" height="120">
+                               
+                            </div>
+                            <div class="col-xl-6">
+                                <p style="color: var(--bs-dark);text-align: justify;height: 96px;"><br><br>Projeto desenvolvido por equipe bolsista de Iniciação Científica do SUPER, parceria entre a Samsung e a Universidade Federal do Amazonas (UFAM) que visa estimular a capacitação e a pesquisa.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-dark copyright" style="color: var(--bs-blue);">BMCVHDL © 2021</p>
+                    </div>
+                </footer>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        </body>
+</html>
